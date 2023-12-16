@@ -43,6 +43,16 @@ p {
   justify-content: space-between;
   align-items: center;
 }
+
+.first-cities .city:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.first-cities {
+  padding-top: 20px;
+}
+
 .date {
   font-size: 0.9em;
 }
