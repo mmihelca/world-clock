@@ -7,7 +7,9 @@ function showLocalTime(event) {
     <h2>${displayName}</h2>
     <p class="date">${moment().tz(cityTimeZone).format("MMMM Do, YYYY")}</p>
         </div>
-        <p class="time">${moment().tz(cityTimeZone).format("h:mm:ss A")}</p>`;
+        <p class="time">${moment()
+          .tz(cityTimeZone)
+          .format("h:mm:ss [<small>]A[</small>]")}</p>`;
 }
 
 let citySelectElement = document.querySelector("#cities");
