@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World clock</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +16,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>🌍 World clock 🕑</h1>
+      <h1>🌎 World clock 🌍</h1>
       <select name="" id="cities">
         <option value="">Choose city</option>
         <option value="">New York</option>
@@ -22,25 +24,24 @@
         <option value="">Seattle</option>
         <option value="">Miami</option>
       </select>
-      <div class="city">
+      <div class="city" id="los-angeles">
         <div class="left">
-          <h2>Los Angeles</h2>
+          <h2>Los Angeles 🇺🇸</h2>
           <p class="date">August 15th, 2022</p>
         </div>
         <p class="time">7:20:00 PM</p>
       </div>
-      <div class="city">
+      <div class="city" id="sydney">
         <div class="left">
-          <h2>Sydney</h2>
+          <h2>Sydney 🇦🇺</h2>
           <p class="date">August 15th, 2022</p>
         </div>
         <p class="time">7:20:00 PM</p>
       </div>
     </div>
     <footer>
-      This project was coded by
-      <a href="https://github.com/mmihelca" target="_blank">Mihaela Črnigoj</a>.
-      <br />It's
+      Coded by
+      <a href="https://github.com/mmihelca" target="_blank">Mihaela Črnigoj</a>,
       <a href="https://github.com/mmihelca/world-clock" target="_blank"
         >open-sourced on Github</a
       >
