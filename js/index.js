@@ -1,6 +1,9 @@
 function showLocalTime(event) {
-  let cityElement = document.querySelector(".city");
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+  let cityElement = document.querySelector(".city");
   let displayName = cityTimeZone.replace("_", " ").split("/")[1];
   cityElement.innerHTML = `
     <div class="left">
@@ -15,4 +18,4 @@ function showLocalTime(event) {
 let citySelectElement = document.querySelector("#cities");
 citySelectElement.addEventListener("change", showLocalTime);
 
-showLocalTime({ target: { value: "Europe/London" } });
+showLocalTime({ target: { value: "current" } });
